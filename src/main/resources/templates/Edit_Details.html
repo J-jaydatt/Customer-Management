@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Customer </title>
+    <style>
+        body{
+            background: #ff9d00;
+        }
+        .from{
+            border: 2px solid white;
+            height: auto;
+            background-color: #73c2fb;
+            border-radius: 25px;
+            width: 30%;
+            align-items: center;
+            margin-left: 35%;
+            margin-top:10%;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        #form_head{
+            text-align: center;
+            align-items: center;
+            
+        }
+        ::placeholder{
+            color: #4682b4;
+        }
+        .from label{
+            display: inline-block;margin-left: 10px;
+            width: auto;
+            margin-left: 50px;  margin-top: 20px;   
+            font-size: 20px;
+        }
+        .from input{
+             
+            border: none;
+           background: none;
+           border-bottom: 2px solid #4682b4;
+            height: 30px;
+            text-align: center;
+            color: whitesmoke;
+
+        }
+        .gender-option {
+            display: inline-block; /* Make each label and radio button inline */
+            margin-right: 15px; /* Add some space between options */
+        }
+        .gender{
+            display: flex;
+            gap:10px;
+        }
+        .gender select{
+            margin-top: 18px;
+            gap: 12px;
+        }
+        sup{
+            color: red;
+        }
+        .gen{
+            display: inline-block;
+            display: flex;
+        }
+        #add{
+            height: 40px;
+            overflow: auto;
+            box-sizing: border-box;
+            max-width: 80%;
+            margin-left: 50px; 
+            margin-top: 20px;
+        }
+
+        .from button {
+            display: block;
+            width: 30%;
+            border-radius: 20px ;
+            margin: 20px;
+            height: 40px;
+            margin-left:35% ;
+            font-weight: bolds;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+        select{
+          
+            height: 30px;
+            background: none;
+            border:#4682b4 solid 1.5px ;
+            border-radius: 5px;
+        }
+		#bk{
+		            font-size: 25px;
+		            margin-left: 40px;
+		        }
+				
+    </style>
+</head>
+<body>
+    <div class="main">
+		<a href="Menu_page.html"><h1 id="bk"><-- BACK</h1></a>
+    
+        <form action="#" method="POST">
+        <div class="from">
+        <h1 id="form_head">Edit Details</h1>
+        <label>Customer ID<sup>*</sup>: </label>
+        <input type="number"  name="reg_id"  placeholder="User Id"><br>
+
+        <label>Customer Name<sup>*</sup> :</label>
+        <input type="text"  name="reg_name" placeholder="Customer Name"><br>
+
+        <label>Contact<sup>*</sup> : </label>
+        <input type="number" size="20" name="reg_contact" placeholder="Mobile" required><br>
+
+        <label>Email<sup>*</sup> : </label>
+        <input type="email" size="20" name="reg_email" placeholder="Email"><br>
+
+        
+        <div class="gender">
+            <label >Gender : </label><br>
+            <select>
+                       <option>Male 
+                       </option>
+                       <option>Female </option>
+                   </select>
+            </div>
+    
+            <br>
+    
+            <div class="Conn_type" >
+            <label> Connection  Type<sup>*</sup> : </label>
+            <select>
+                <option>Domestic</option>
+                <option>Commercial</option>
+            </select>
+
+        <br>
+
+
+        <label >Address<sup>*</sup> : </label><br>
+        <input id="add" type="text" size="100" name="reg_address" placeholder="ex:xyz street xyz city"><br>
+
+        <button type="submit" >Submit</button>
+        </div>
+    </form>
+        
+    
+    </div>
+</body>
+</html>
