@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Register</title>
+    <style>
+        body{
+            background: #ff9d00;
+        }
+        .form{
+            border: 2px solid white;
+            height: auto;
+            background-color: #73c2fb;
+            border-radius: 25px;
+            width: 40%;
+            padding: 10px;
+            align-items: center;
+            margin-left: 30%;
+            margin-top:10%;
+        }
+        .row_1{
+            align-content: center;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        input{
+            height: 40px;
+            text-align:center;
+            font-size: 20px;
+        }
+        label{
+            font-size: 25px;
+        }
+        button{
+            margin-left: 30%;
+            margin-top: 10%;
+            height: 40px;
+            width: 40%;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+        button:hover{
+            background:#ffe302 ;
+        }
+        h2{
+            text-align: center;
+        }
+
+        #bk{
+		            font-size: 25px;
+		            margin-left: 40px;
+		        }
+                a{
+            text-decoration: none;
+            color: black;
+			text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+		<a href="Menu_page.html"><h1 id="bk"><-- BACK</h1></a>
+    
+        <form action="#" method="POST">
+        <div class="form">
+            <h2>Remove Record</h2>
+            <div class="row_1">
+                <label>Enter ID   :-</label>
+                <input type="text" size="30" required>
+            </div>
+            <button type="submit"> Remove </button>
+
+        </div>
+         </form>
+        
+    </div>
+</body>
+</html>
